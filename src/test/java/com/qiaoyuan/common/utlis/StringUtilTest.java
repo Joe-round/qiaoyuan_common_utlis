@@ -25,5 +25,15 @@ public class StringUtilTest {
 			System.out.println("有值");
 		}
 	}
+	@Test
+	public void randomChineseStringTest() {
+		String randomString = StringUtil.randomChineseString(100);
+		System.out.println(randomString);
+	}
+	@Test
+	public void generateChineseNameTest() {
+		String name = StringUtil.generateChineseName();
+		System.out.println(name);
+	}
 
 }
